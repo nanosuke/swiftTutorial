@@ -28,6 +28,8 @@
 		956152C5294CC76800D857A1 /* charleyrivers@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 956152BA294CC76800D857A1 /* charleyrivers@2x.jpg */; };
 		956152C7294CC96700D857A1 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956152C6294CC96700D857A1 /* ModelData.swift */; };
 		956152CC294CCC3900D857A1 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956152CB294CCC3900D857A1 /* LandmarkRow.swift */; };
+		959D9293294D701600C19CEC /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959D9292294D701600C19CEC /* LandmarkList.swift */; };
+		959D9295294D71ED00C19CEC /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959D9294294D71ED00C19CEC /* LandmarkDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		956152BA294CC76800D857A1 /* charleyrivers@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "charleyrivers@2x.jpg"; sourceTree = "<group>"; };
 		956152C6294CC96700D857A1 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		956152CB294CCC3900D857A1 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
+		959D9292294D701600C19CEC /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
+		959D9294294D71ED00C19CEC /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +93,6 @@
 				956152C9294CCBAD00D857A1 /* Model */,
 				95081654294CB9F100E350BE /* LandmarksApp.swift */,
 				95081658294CB9F300E350BE /* Assets.xcassets */,
-				956152CA294CCBD900D857A1 /* Resources */,
 				9508165A294CB9F300E350BE /* Preview Content */,
 			);
 			path = Landmarks;
@@ -119,8 +122,10 @@
 			children = (
 				95081656294CB9F100E350BE /* ContentView.swift */,
 				956152A8294CBDA700D857A1 /* CircleImage.swift */,
-				956152CB294CCC3900D857A1 /* LandmarkRow.swift */,
+				959D9294294D71ED00C19CEC /* LandmarkDetail.swift */,
 				956152AA294CBE7700D857A1 /* MapView.swift */,
+				956152CB294CCC3900D857A1 /* LandmarkRow.swift */,
+				959D9292294D701600C19CEC /* LandmarkList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -128,8 +133,9 @@
 		956152C9294CCBAD00D857A1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				956152AE294CC62A00D857A1 /* Landmark.swift */,
 				956152C6294CC96700D857A1 /* ModelData.swift */,
+				956152AE294CC62A00D857A1 /* Landmark.swift */,
+				956152CA294CCBD900D857A1 /* Resources */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -227,6 +233,8 @@
 				95081657294CB9F100E350BE /* ContentView.swift in Sources */,
 				956152AB294CBE7700D857A1 /* MapView.swift in Sources */,
 				95081655294CB9F100E350BE /* LandmarksApp.swift in Sources */,
+				959D9293294D701600C19CEC /* LandmarkList.swift in Sources */,
+				959D9295294D71ED00C19CEC /* LandmarkDetail.swift in Sources */,
 				956152A9294CBDA700D857A1 /* CircleImage.swift in Sources */,
 				956152AF294CC62A00D857A1 /* Landmark.swift in Sources */,
 				956152CC294CCC3900D857A1 /* LandmarkRow.swift in Sources */,
@@ -359,6 +367,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Landmarks/Preview Content\"";
+				DEVELOPMENT_TEAM = GHALQMBJDJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -387,6 +396,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Landmarks/Preview Content\"";
+				DEVELOPMENT_TEAM = GHALQMBJDJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
