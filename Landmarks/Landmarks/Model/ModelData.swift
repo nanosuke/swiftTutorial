@@ -6,10 +6,15 @@
 //
 
 import Foundation
+import Combine
 
-var landmarks: [Landmark] = load("landmarkData.json")
+final class ModelData: ObservableObject {
+  @Published var landmarks: [Landmark] = load("landmarkData.json") // array initialize from landmarkData.json
+  // @PublishedはObservableObjectプロトコルに準拠したクラス内のプロパティを監視し、変化があった際にViewに対して通知を行う
+}
 
-func load<T: Decodable>(_ filename: String) -> T {
+
+func load<T: Decodable>(_ filename: String) -> T { // load(_:) method fetches JSON data with a given name from the app’s main bundle
     let data: Data
     
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil)

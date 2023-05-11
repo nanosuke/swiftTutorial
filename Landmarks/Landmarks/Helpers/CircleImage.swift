@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct CircleImage: View {
-    var image: Image
+    var image: Image // stored image property
     
     var body: some View {
         image
-            .clipShape(Circle())
+            .clipShape(Circle()) // 円でマスク
             .overlay{
-                Circle().stroke(.white, lineWidth:4)
+                Circle().stroke(.white, lineWidth:4) // 枠線
             }
-            .shadow(radius: 7)
+            .shadow(radius: 7) // add drop-shadowvariable
+            // Command click and show SwiftUI Inspector
     }
 }
 
