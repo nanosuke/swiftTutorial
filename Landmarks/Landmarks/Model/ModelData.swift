@@ -11,6 +11,7 @@ import Combine
 final class ModelData: ObservableObject {
   @Published var landmarks: [Landmark] = load("landmarkData.json") // array initialize from landmarkData.json
   // @PublishedはObservableObjectプロトコルに準拠したクラス内のプロパティを監視し、変化があった際にViewに対して通知を行う
+  var hikes: [Hike] = load("hikeData.json") // データを読み込んだ後変更することはないため、@Publishedをつける必要がない
 }
 
 
