@@ -8,6 +8,7 @@ struct Landmark: Hashable, Codable, Identifiable { // Hashable：値に基づい
     var park: String
     var state: String
     var description: String
+    var isFavorite: Bool
 
     private var imageName: String // read the name of the image
     var image: Image{ // loads an image from the asset

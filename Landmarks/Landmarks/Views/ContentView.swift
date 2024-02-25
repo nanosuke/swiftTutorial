@@ -8,4 +8,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environment(ModelData()) // サブビューが環境内のmodel objectを必要としているのにも関わらず、プレビューしているビューにenvironment修飾子がないとき、プレビューは失敗する
 }
