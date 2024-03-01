@@ -1,6 +1,10 @@
 import Foundation
 
-var landmarks: [Landmark] = load("landmarkData.json") // Landmark型の配列、landmarkにloadする
+@Observable // SwiftUI updates a view only when an observable property changes and the view's body reads the property directly
+class ModelData {
+    var landmarks: [Landmark] = load("landmarkData.json") // Landmark型の配列、landmarkにloadする
+}
+
 
 func load<T: Decodable>(_ filename: String) -> T { // デコード可能な任意の型を受け入れるジェネリック関数
     let data: Data
